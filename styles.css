@@ -1879,3 +1879,97 @@ h2 em {
     transition-duration: 0.01ms !important;
   }
 }
+
+
+/* ---------- Mobile spacing refinement ---------- */
+@media (max-width: 768px) {
+  /* Keep consecutive sections visually connected on smaller screens. */
+  .section {
+    padding-block: 52px;
+  }
+
+  .quote-section {
+    padding-block: 58px;
+  }
+
+  .section-heading {
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+
+  .about-layout,
+  .equipment-layout,
+  .benefits-layout,
+  .quote-layout {
+    gap: 28px;
+  }
+
+  .equipment-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .equip-tabs {
+    margin-bottom: 24px;
+  }
+
+  .equipment-image {
+    max-height: 280px;
+  }
+
+  .benefit-grid {
+    margin-top: 24px;
+    gap: 14px;
+  }
+
+  .faq-list {
+    gap: 10px;
+  }
+
+  .locations-grid {
+    gap: 16px;
+  }
+
+  .contact-note {
+    margin-top: 20px;
+  }
+
+  .trust-strip {
+    padding-block: 38px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding-block: 44px;
+  }
+
+  .quote-section {
+    padding-block: 50px;
+  }
+
+  .section-heading {
+    margin-bottom: 24px;
+  }
+
+  .about-layout,
+  .equipment-layout,
+  .benefits-layout,
+  .quote-layout {
+    gap: 22px;
+  }
+
+  .equipment-image {
+    max-height: 240px;
+  }
+
+  .quote-form {
+    padding: 26px 20px 24px;
+  }
+
+  .location-card {
+    padding: 26px 22px;
+  }
+}
