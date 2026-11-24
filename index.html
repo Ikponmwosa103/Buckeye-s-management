@@ -3,127 +3,706 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#102a43">
-  <meta name="description" content="Buckeye State Welding & Fabricating provides machining, welding, fabrication, flame cutting and assembly solutions in Elyria, Ohio. Serving industry since 1957.">
+  <meta name="theme-color" content="#0a1628">
+  <meta name="description" content="Buckeye State Welding & Fabricating — precision machining, welding, fabrication, flame & plasma cutting, and assembly in Elyria, Ohio. Serving industry since 1957.">
   <meta property="og:title" content="Buckeye State Welding & Fabricating | Precision Built Since 1957">
-  <meta property="og:description" content="Machining, welding, fabrication and industrial solutions backed by generations of experience.">
+  <meta property="og:description" content="Machining, welding, fabrication and industrial solutions backed by three generations of experience.">
   <meta property="og:type" content="website">
   <title>Buckeye State Welding & Fabricating | Precision Built Since 1957</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Manrope:wght@500;600;700;800&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/styles.css">
-  <script type="module" src="/script.js"></script>
 </head>
 <body>
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Top utility bar -->
   <div class="topline">
     <div class="container topline-inner">
-      <span><i class="status-dot"></i> Serving the industry's needs since 1957</span>
-      <div class="topline-links"><a href="tel:+14403220319">Machine Shop&nbsp; 440.322.0319</a><a href="tel:+14403236831">Fabrication Shop&nbsp; 440.323.6831</a></div>
+      <span class="topline-status">
+        <i class="status-dot" aria-hidden="true"></i>
+        Serving industry since 1957 · Elyria, Ohio
+      </span>
+      <div class="topline-links">
+        <a href="tel:+14403220319">Machine Shop · 440.322.0319</a>
+        <a href="tel:+14403236831">Fabrication · 440.323.6831</a>
+      </div>
     </div>
   </div>
+
+  <!-- Header -->
   <header class="site-header" id="top">
     <div class="container nav-wrap">
       <a class="brand" href="#top" aria-label="Buckeye State Welding and Fabricating home">
         <span class="brand-mark">B<span>W</span></span>
-        <span class="brand-copy"><strong>BUCKEYE STATE</strong><small>WELDING &amp; FABRICATING, INC.</small></span>
+        <span class="brand-copy">
+          <strong>BUCKEYE STATE</strong>
+          <small>WELDING &amp; FABRICATING, INC.</small>
+        </span>
       </a>
-      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
-      <nav class="main-nav" aria-label="Main navigation">
-        <a href="#top">Home</a><a href="#about">About</a>
+
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+        <a href="#top" data-nav>Home</a>
+        <a href="#about" data-nav>About</a>
         <div class="nav-dropdown">
-          <a href="#services" class="dropdown-trigger">Capabilities <span>⌄</span></a>
-          <div class="dropdown-menu"><a href="#machining">Machining</a><a href="#welding">Welding &amp; Fabrication</a><a href="#cutting">Flame &amp; Plasma Cutting</a><a href="#assembly">Assembly &amp; Disassembly</a></div>
+          <button class="dropdown-trigger" aria-expanded="false" aria-haspopup="true">
+            Capabilities <span class="chevron" aria-hidden="true">▾</span>
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="#machining" role="menuitem">Machining</a>
+            <a href="#welding" role="menuitem">Welding &amp; Fabrication</a>
+            <a href="#cutting" role="menuitem">Flame &amp; Plasma Cutting</a>
+            <a href="#assembly" role="menuitem">Assembly &amp; Disassembly</a>
+          </div>
         </div>
-        <a href="#equipment">Equipment</a><a href="#contact">Contact</a>
-        <a class="button button-small nav-cta" href="#quote">Request a Quote <span>↗</span></a>
+        <a href="#equipment" data-nav>Equipment</a>
+        <a href="#process" data-nav>Process</a>
+        <a href="#contact" data-nav>Contact</a>
+        <a class="button button-small nav-cta" href="#quote">Request a Quote <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
+
   <main>
-    <section class="hero">
-      <div class="hero-image"></div><div class="hero-grid"></div>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-image"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+      </div>
       <div class="container hero-content">
-        <div class="eyebrow eyebrow-light"><span></span> ELYRIA, OHIO · EST. 1957</div>
-        <h1>Precision engineering.<br><em>Built on experience.</em></h1>
-        <p>Dependable machining, welding, fabrication and industrial solutions — backed by generations of hands-on expertise.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#quote">Request a Quote <span>↗</span></a><a class="button button-ghost" href="#services">Explore Our Capabilities <span>→</span></a></div>
-        <div class="hero-proof"><span class="proof-line"></span><span><strong>Since 1957</strong><small>Three generations of experience</small></span></div>
-      </div>
-      <div class="hero-index"><span>01</span><span class="index-rule"></span><span>ENGINEERED TO DELIVER</span></div>
-    </section>
-    <section class="trust-strip"><div class="container trust-grid">
-      <div class="trust-intro"><span class="section-kicker">THE BUCKEYE DIFFERENCE</span><strong>Experience that<br>moves industry forward.</strong></div>
-      <div class="trust-item"><b>1957</b><span>Started at our<br>current machine shop</span></div><div class="trust-item"><b>3</b><span>Generations of<br>experience</span></div><div class="trust-item"><b>2</b><span>Specialized<br>Elyria facilities</span></div><div class="trust-item"><b>1</b><span>Connected source for<br>multiple capabilities</span></div>
-    </div></section>
-    <section class="section about-section" id="about"><div class="container about-layout">
-      <div class="about-visual"><img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1100&q=85" alt="Industrial metalworking equipment inside a fabrication workshop" loading="lazy"><div class="image-caption"><span class="caption-mark">B</span><span><b>Built through generations</b><small>Serving industry since 1957</small></span></div><div class="blue-square"></div></div>
-      <div class="about-copy"><div class="eyebrow"><span></span> A LEGACY OF CRAFTSMANSHIP</div><h2>Decades of experience.<br><em>A commitment to precision.</em></h2><p class="lead">Good work stands the test of time. So do the relationships behind it.</p><p>Buckeye State Welding &amp; Fabricating began at its current machine shop location in 1957 and was incorporated in 1975. Across three generations, the company has continued to support customers with machining, fabrication and assembly expertise.</p><p>From job-shop repair and maintenance machining to structural steel fabrication, the team focuses on understanding each project and delivering quality workmanship.</p><a class="text-link" href="#services">Discover our capabilities <span>↗</span></a><div class="about-note"><span class="note-icon">✳</span><span><b>Two facilities. Complementary capabilities.</b><small>Machine shop and fabrication shop in Elyria, Ohio.</small></span></div></div>
-    </div></section>
-    <section class="section services-section" id="services"><div class="container">
-      <div class="section-heading"><div><div class="eyebrow"><span></span> WHAT WE DO</div><h2>Capabilities for the<br><em>work that matters.</em></h2></div><p>Practical industrial expertise, brought together to support demanding projects from preparation through completion.</p></div>
-      <div class="services-grid">
-        <article class="service-card" id="machining"><div class="service-photo"><img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=900&q=85" alt="Precision industrial machining equipment" loading="lazy"><span class="service-number">01</span></div><div class="service-body"><span class="service-label">MACHINE SHOP</span><h3>Machining</h3><p>Job-shop repair and maintenance machining for light and heavy steel and other materials, with an emphasis on craftsmanship and detail.</p><a href="#equipment" class="text-link">Explore equipment <span>↗</span></a></div></article>
-        <article class="service-card" id="welding"><div class="service-photo"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=85" alt="Welder working on a metal fabrication project" loading="lazy"><span class="service-number">02</span></div><div class="service-body"><span class="service-label">FABRICATION SHOP</span><h3>Welding &amp; Fabrication</h3><p>Fabrication of light and heavy structural steel and steel components for customers across diverse industries. Welders are D1.1 certified, as stated by the company.</p><a href="#contact" class="text-link">Discuss your project <span>↗</span></a></div></article>
-        <article class="service-card" id="cutting"><div class="service-photo"><img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=900&q=85" alt="Industrial metal cutting operation" loading="lazy"><span class="service-number">03</span></div><div class="service-body"><span class="service-label">PLATE PROCESSING</span><h3>Flame &amp; Plasma Cutting</h3><p>In-house plate warehouse and multiple cutting systems, including high-definition plasma capability for a range of metal cutting needs.</p><a href="#equipment" class="text-link">View cutting capabilities <span>↗</span></a></div></article>
-        <article class="service-card" id="assembly"><div class="service-photo"><img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=85" alt="Industrial mechanical assembly work" loading="lazy"><span class="service-number">04</span></div><div class="service-body"><span class="service-label">INDUSTRIAL SUPPORT</span><h3>Assembly &amp; Disassembly</h3><p>Disassembly, inspection and assessment of gearboxes, rolls, roll housings and conveyor systems, alongside heavy and light assembly work.</p><a href="#contact" class="text-link">Talk to our team <span>↗</span></a></div></article>
-      </div>
-    </div></section>
-    <section class="equipment-section section" id="equipment"><div class="container">
-      <div class="equipment-top"><div><div class="eyebrow eyebrow-light"><span></span> THE TOOLS BEHIND THE WORK</div><h2>Capability you can<br><em>put to work.</em></h2></div><p>Published equipment details give customers a clearer picture of the machining, cutting and fabrication resources available across Buckeye's facilities.</p></div>
-      <div class="equipment-layout"><div class="equipment-image"><img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=85" alt="Large industrial machine tool in a workshop" loading="lazy"><span>INDUSTRIAL MACHINING</span></div>
-        <div class="equipment-list">
-          <article><span class="equip-index">01</span><div><h3>CNC Milling</h3><p>Proto Trac bed mill · published travels include 60" × 23" × 20.5" and two 40" × 20" × 21" units.</p></div><span class="equip-arrow">↗</span></article>
-          <article><span class="equip-index">02</span><div><h3>CNC Boring Mills</h3><p>Johnford BMC 130 5-axis CNC · X travel 119", Y travel 90.5", Z travel 63", W travel 27.5".</p></div><span class="equip-arrow">↗</span></article>
-          <article><span class="equip-index">03</span><div><h3>Lathes &amp; Drilling</h3><p>CNC Mori Seiki and Proto Trac lathes, CNC Nardini, manual lathe and radial-arm drilling equipment.</p></div><span class="equip-arrow">↗</span></article>
-          <article><span class="equip-index">04</span><div><h3>Welding &amp; Handling</h3><p>Stick, TIG and MIG processes; overhead cranes and welding positioners listed by the company.</p></div><span class="equip-arrow">↗</span></article>
-          <article><span class="equip-index">05</span><div><h3>Flame &amp; Plasma Cutting</h3><p>Multiple flame-cutting systems and a Tru-Kut high-definition plasma system with a 5' × 10' table.</p></div><span class="equip-arrow">↗</span></article>
+        <div class="eyebrow eyebrow-light">
+          <span class="eyebrow-line"></span>
+          ELYRIA, OHIO · EST. 1957
         </div>
-      </div><p class="equipment-footnote">Equipment and specifications are summarized from the company's published website. Confirm current availability and project suitability directly with Buckeye.</p>
-    </div></section>
-    <section class="section portfolio-section" id="projects"><div class="container">
-      <div class="section-heading"><div><div class="eyebrow"><span></span> WORK IN OUR WORLD</div><h2>Industrial work.<br><em>Real-world demands.</em></h2></div><p>A visual look at the types of environments and processes related to Buckeye's published capabilities.</p></div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item portfolio-large"><img src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1200&q=85" alt="Industrial workshop machinery" loading="lazy"><div><span>ILLUSTRATIVE INDUSTRY IMAGE</span><b>Precision machining</b></div></div>
-        <div class="portfolio-item"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=85" alt="Metal welding work" loading="lazy"><div><span>ILLUSTRATIVE INDUSTRY IMAGE</span><b>Welding &amp; fabrication</b></div></div>
-        <div class="portfolio-item"><img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=900&q=85" alt="Metalworking and cutting" loading="lazy"><div><span>ILLUSTRATIVE INDUSTRY IMAGE</span><b>Metal cutting</b></div></div>
-      </div><p class="portfolio-note">These are illustrative industry photographs, not a representation of completed Buckeye customer projects.</p>
-    </div></section>
-    <section class="why-section section"><div class="container why-layout">
-      <div><div class="eyebrow"><span></span> WHY BUCKEYE</div><h2>Experience that<br><em>works alongside you.</em></h2><p class="why-lead">A practical partner for industrial work — with complementary services, established facilities and a customer-focused approach.</p><a href="#quote" class="button button-dark">Start a conversation <span>↗</span></a></div>
-      <div class="benefit-grid">
-        <article><span>01</span><h3>Generations of experience</h3><p>Established in 1957, with a history spanning three generations.</p></article>
-        <article><span>02</span><h3>Complementary capabilities</h3><p>Machining, fabrication, cutting and assembly support in one company.</p></article>
-        <article><span>03</span><h3>Technical resources</h3><p>Published equipment details help customers assess project fit.</p></article>
-        <article><span>04</span><h3>Customer-focused service</h3><p>The company emphasizes understanding requirements and supporting project success.</p></article>
+        <h1 id="hero-title">Precision engineering.<br><em>Built on experience.</em></h1>
+        <p class="hero-lead">Dependable machining, welding, fabrication and industrial solutions — backed by three generations of hands-on expertise.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#quote">Request a Quote <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#services">Explore Capabilities <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="hero-proof">
+          <span class="proof-line" aria-hidden="true"></span>
+          <div>
+            <strong>Since 1957</strong>
+            <small>Three generations of craftsmanship</small>
+          </div>
+        </div>
       </div>
-    </div></section>
-    <section class="testimonial-section"><div class="container testimonial-layout"><div class="quote-mark">“</div><div><div class="eyebrow eyebrow-light"><span></span> CUSTOMER FEEDBACK</div><blockquote>“They were meticulous in understanding our requirements and were proactive in offering feedback and alternatives to achieve our goals.”</blockquote><div class="quote-attribution"><span></span><div><b>Ted A. Bentley</b><small>Senior Project Manager · Customer letter published on Buckeye's website</small></div></div></div></div></section>
-    <section class="quote-section section" id="quote"><div class="container quote-layout">
-      <div class="quote-intro"><div class="eyebrow"><span></span> LET'S TALK ABOUT YOUR PROJECT</div><h2>Have an industrial<br>project in <em>mind?</em></h2><p>Tell us a little about your requirements. This concept form demonstrates the enquiry experience; it does not transmit information to Buckeye.</p><div class="quote-contact"><span class="contact-icon">↗</span><div><small>Prefer to speak with the team?</small><b><a href="tel:+14403220319">440.322.0319</a> <span>·</span> <a href="tel:+14403236831">440.323.6831</a></b></div></div></div>
-      <form class="quote-form" id="quoteForm">
-        <div class="form-heading"><b>Project enquiry</b><span>Fields marked * are required</span></div>
-        <div class="form-row"><label>Full name *<input name="name" autocomplete="name" required placeholder="Your name"></label><label>Company name<input name="company" autocomplete="organization" placeholder="Company"></label></div>
-        <div class="form-row"><label>Email address *<input type="email" name="email" autocomplete="email" required placeholder="you@company.com"></label><label>Phone number<input type="tel" name="phone" autocomplete="tel" placeholder="Your phone number"></label></div>
-        <label>Service required *<select name="service" required><option value="">Select a capability</option><option>Machining</option><option>Welding &amp; Fabrication</option><option>Flame &amp; Plasma Cutting</option><option>Assembly &amp; Disassembly</option><option>Multiple services / Not sure</option></select></label>
-        <label>Tell us about your project *<textarea name="details" rows="4" required placeholder="Project scope, material, quantities, timeline or other useful details..."></textarea></label>
-        <label class="file-field">Attach drawings or specifications <input type="file" name="attachment" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx,.step,.stp,.dxf"><small>Demo only · PDF, image, document or CAD drawing</small></label>
-        <button class="button button-primary form-submit" type="submit">Submit Quote Request <span>↗</span></button><p class="form-disclaimer">Demonstration only. No information or attachments are uploaded or sent.</p><div class="form-status" role="status" aria-live="polite"></div>
-      </form>
-    </div></section>
-    <section class="contact-section section" id="contact"><div class="container">
-      <div class="section-heading contact-heading"><div><div class="eyebrow"><span></span> FIND THE RIGHT FACILITY</div><h2>Two Elyria locations.<br><em>One experienced team.</em></h2></div><p>Contact the appropriate facility to discuss your machining or fabrication requirements.</p></div>
-      <div class="locations-grid">
-        <article class="location-card"><div class="location-top"><span>MACHINE SHOP</span><span class="location-symbol">01</span></div><h3>131 Buckeye Street</h3><p>Elyria, Ohio</p><a class="location-phone" href="tel:+14403220319">440.322.0319 <span>↗</span></a><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=131+Buckeye+Street+Elyria+Ohio" target="_blank" rel="noreferrer">Get directions ↗</a></article>
-        <article class="location-card location-featured"><div class="location-top"><span>FABRICATION SHOP</span><span class="location-symbol">02</span></div><h3>175 Woodford Avenue</h3><p>Elyria, Ohio</p><a class="location-phone" href="tel:+14403236831">440.323.6831 <span>↗</span></a><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=175+Woodford+Avenue+Elyria+Ohio" target="_blank" rel="noreferrer">Get directions ↗</a></article>
-      </div><p class="contact-note">A public email address and verified business hours were not displayed in the official website information reviewed for this concept, so they have been intentionally omitted.</p>
-    </div></section>
+      <div class="hero-index" aria-hidden="true">
+        <span>01</span>
+        <span class="index-rule"></span>
+        <span>ENGINEERED TO DELIVER</span>
+      </div>
+    </section>
+
+    <!-- TRUST / STATS -->
+    <section class="trust-strip" aria-label="Key facts">
+      <div class="container trust-grid">
+        <div class="trust-intro">
+          <span class="section-kicker">THE BUCKEYE DIFFERENCE</span>
+          <strong>Experience that<br>moves industry forward.</strong>
+        </div>
+        <div class="trust-item" data-count="1957">
+          <b class="count-target">1957</b>
+          <span>Started at our<br>current machine shop</span>
+        </div>
+        <div class="trust-item" data-count="3">
+          <b class="count-target">3</b>
+          <span>Generations of<br>experience</span>
+        </div>
+        <div class="trust-item" data-count="2">
+          <b class="count-target">2</b>
+          <span>Specialized<br>Elyria facilities</span>
+        </div>
+        <div class="trust-item">
+          <b>1</b>
+          <span>Connected source for<br>multiple capabilities</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="container about-layout">
+        <div class="about-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1100&q=85"
+            alt="Industrial metalworking equipment inside a fabrication workshop"
+            width="1100"
+            height="820"
+            loading="lazy"
+          >
+          <div class="image-caption">
+            <span class="caption-mark">B</span>
+            <span>
+              <b>Built through generations</b>
+              <small>Serving industry since 1957</small>
+            </span>
+          </div>
+          <div class="blue-square" aria-hidden="true"></div>
+        </div>
+        <div class="about-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-line"></span> A LEGACY OF CRAFTSMANSHIP</div>
+          <h2>Decades of experience.<br><em>A commitment to precision.</em></h2>
+          <p class="lead">Good work stands the test of time. So do the relationships behind it.</p>
+          <p>Buckeye State Welding &amp; Fabricating began at its current machine shop location in 1957 and was incorporated in 1975. Across three generations, the company has continued to support customers with machining, fabrication and assembly expertise.</p>
+          <p>From job-shop repair and maintenance machining to structural steel fabrication, the team focuses on understanding each project and delivering quality workmanship.</p>
+          <a class="text-link" href="#services">Discover our capabilities <span aria-hidden="true">↗</span></a>
+          <div class="about-note">
+            <span class="note-icon" aria-hidden="true">✳</span>
+            <span>
+              <b>Two facilities. Complementary capabilities.</b>
+              <small>Machine shop and fabrication shop in Elyria, Ohio.</small>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> WHAT WE DO</div>
+            <h2>Capabilities for the<br><em>work that matters.</em></h2>
+          </div>
+          <p>Practical industrial expertise, brought together to support demanding projects from preparation through completion.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal" id="machining">
+            <div class="service-photo">
+              <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=900&q=85" alt="Precision industrial machining equipment" width="900" height="600" loading="lazy">
+              <span class="service-number">01</span>
+            </div>
+            <div class="service-body">
+              <span class="service-label">MACHINE SHOP</span>
+              <h3>Machining</h3>
+              <p>Job-shop repair and maintenance machining for light and heavy steel and other materials, with an emphasis on craftsmanship and detail.</p>
+              <a href="#equipment" class="text-link">Explore equipment <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" id="welding">
+            <div class="service-photo">
+              <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=85" alt="Welder working on a metal fabrication project" width="900" height="600" loading="lazy">
+              <span class="service-number">02</span>
+            </div>
+            <div class="service-body">
+              <span class="service-label">FABRICATION SHOP</span>
+              <h3>Welding &amp; Fabrication</h3>
+              <p>Fabrication of light and heavy structural steel and steel components for customers across diverse industries. Welders are D1.1 certified.</p>
+              <a href="#contact" class="text-link">Discuss your project <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" id="cutting">
+            <div class="service-photo">
+              <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=900&q=85" alt="Industrial metal cutting operation" width="900" height="600" loading="lazy">
+              <span class="service-number">03</span>
+            </div>
+            <div class="service-body">
+              <span class="service-label">PLATE PROCESSING</span>
+              <h3>Flame &amp; Plasma Cutting</h3>
+              <p>In-house plate warehouse and multiple cutting systems, including high-definition plasma capability for a range of metal cutting needs.</p>
+              <a href="#equipment" class="text-link">View cutting capabilities <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal" id="assembly">
+            <div class="service-photo">
+              <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=85" alt="Industrial mechanical assembly work" width="900" height="600" loading="lazy">
+              <span class="service-number">04</span>
+            </div>
+            <div class="service-body">
+              <span class="service-label">INDUSTRIAL SUPPORT</span>
+              <h3>Assembly &amp; Disassembly</h3>
+              <p>Disassembly, inspection and assessment of gearboxes, rolls, roll housings and conveyor systems, alongside heavy and light assembly work.</p>
+              <a href="#contact" class="text-link">Talk to our team <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> HOW WE WORK</div>
+            <h2>From inquiry to<br><em>delivery.</em></h2>
+          </div>
+          <p>A clear, responsive process designed for industrial timelines and the realities of production schedules.</p>
+        </div>
+
+        <ol class="process-steps">
+          <li class="process-step reveal">
+            <span class="step-num">01</span>
+            <h3>Understand the requirement</h3>
+            <p>We listen carefully to project scope, materials, tolerances and delivery windows so every quote is grounded in reality.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num">02</span>
+            <h3>Quote &amp; plan</h3>
+            <p>Quick turnaround on quotations. Our team identifies the right facility resources and sequence for efficient execution.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num">03</span>
+            <h3>Fabricate &amp; machine</h3>
+            <p>Precision work across machining, welding, cutting and assembly — with the capacity to handle both planned and urgent needs.</p>
+          </li>
+          <li class="process-step reveal">
+            <span class="step-num">04</span>
+            <h3>Deliver &amp; support</h3>
+            <p>On-time delivery with daily truck service to customers, plus the responsiveness that keeps projects on schedule.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- EQUIPMENT (tabbed) -->
+    <section class="section equipment-section" id="equipment">
+      <div class="container">
+        <div class="equipment-top reveal">
+          <div>
+            <div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> THE TOOLS BEHIND THE WORK</div>
+            <h2>Capability you can<br><em>put to work.</em></h2>
+          </div>
+          <p>Published equipment details give customers a clearer picture of the machining, cutting and fabrication resources available across Buckeye’s facilities.</p>
+        </div>
+
+        <div class="equip-tabs reveal" role="tablist" aria-label="Equipment categories">
+          <button class="equip-tab is-active" role="tab" aria-selected="true" data-tab="machining" id="tab-machining">Machining</button>
+          <button class="equip-tab" role="tab" aria-selected="false" data-tab="cutting" id="tab-cutting">Cutting</button>
+          <button class="equip-tab" role="tab" aria-selected="false" data-tab="fab" id="tab-fab">Fabrication</button>
+        </div>
+
+        <div class="equipment-layout">
+          <div class="equipment-image reveal">
+            <img
+              src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1200&q=85"
+              alt="Large industrial machine tool in a workshop"
+              width="1200"
+              height="900"
+              loading="lazy"
+              id="equip-visual"
+            >
+            <span id="equip-visual-label">INDUSTRIAL MACHINING</span>
+          </div>
+
+          <div class="equipment-panels">
+            <!-- Machining panel -->
+            <div class="equipment-list is-active" role="tabpanel" id="panel-machining" aria-labelledby="tab-machining">
+              <article>
+                <span class="equip-index">01</span>
+                <div>
+                  <h3>CNC Milling</h3>
+                  <p>Proto Trac bed mill · published travels include 60″ × 23″ × 20.5″ and two 40″ × 20″ × 21″ units.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="equip-index">02</span>
+                <div>
+                  <h3>CNC Turning</h3>
+                  <p>CNC lathe capability supporting precision turning work for repair and production components.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="equip-index">03</span>
+                <div>
+                  <h3>Manual Machining</h3>
+                  <p>Job-shop flexibility for repair and maintenance machining of light and heavy steel and other materials.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="equip-index">04</span>
+                <div>
+                  <h3>Grinding &amp; Support</h3>
+                  <p>Supporting equipment for precision finishing and secondary operations as published by the company.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+            </div>
+
+            <!-- Cutting panel -->
+            <div class="equipment-list" role="tabpanel" id="panel-cutting" aria-labelledby="tab-cutting" hidden>
+              <article>
+                <span class="equip-index">01</span>
+                <div>
+                  <h3>High-Definition Plasma</h3>
+                  <p>High-definition plasma cutting for accurate plate processing across a range of thicknesses.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="equip-index">02</span>
+                <div>
+                  <h3>Multi-Head Flame Cutting</h3>
+                  <p>Multiple-head flame cutting machines for complex shapes in materials up to 6″ plate in stock.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="equip-index">03</span>
+                <div>
+                  <h3>Plate Warehouse</h3>
+                  <p>In-house plate inventory supporting rapid response for production and emergency work.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="equip-index">04</span>
+                <div>
+                  <h3>Band Saw</h3>
+                  <p>DoAll horizontal band saw with 8″ × 12″ capacity for efficient stock preparation.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+            </div>
+
+            <!-- Fabrication panel -->
+            <div class="equipment-list" role="tabpanel" id="panel-fab" aria-labelledby="tab-fab" hidden>
+              <article>
+                <span class="equip-index">01</span>
+                <div>
+                  <h3>Overhead Cranes</h3>
+                  <p>5-ton and 10-ton overhead cranes supporting heavy structural and component handling.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="equip-index">02</span>
+                <div>
+                  <h3>Welding Positioners</h3>
+                  <p>4000 lb, 2500 lb and 200 lb welding positioners for controlled, high-quality weldments.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="equip-index">03</span>
+                <div>
+                  <h3>Welding Processes</h3>
+                  <p>Stick, TIG, MIG and oxygen-acetylene processes available. Welders are D1.1 certified.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+              <article>
+                <span class="equip-index">04</span>
+                <div>
+                  <h3>Structural Capacity</h3>
+                  <p>Light and heavy structural steel fabrication for diverse industrial applications.</p>
+                </div>
+                <span class="equip-arrow" aria-hidden="true">↗</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO / GALLERY -->
+    <section class="section portfolio-section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> WORK IN OUR WORLD</div>
+            <h2>Industrial work.<br><em>Real-world demands.</em></h2>
+          </div>
+          <p>A visual look at the types of environments and processes related to Buckeye’s published capabilities. Imagery is illustrative.</p>
+        </div>
+
+        <div class="portfolio-grid">
+          <figure class="portfolio-item reveal">
+            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=800&q=85" alt="Welding and fabrication environment" width="800" height="600" loading="lazy">
+            <figcaption>
+              <span>ILLUSTRATIVE</span>
+              <b>Welding &amp; fabrication</b>
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item reveal">
+            <img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=800&q=85" alt="Precision machining environment" width="800" height="600" loading="lazy">
+            <figcaption>
+              <span>ILLUSTRATIVE</span>
+              <b>Precision machining</b>
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item reveal">
+            <img src="https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=800&q=85" alt="Metal cutting operation" width="800" height="600" loading="lazy">
+            <figcaption>
+              <span>ILLUSTRATIVE</span>
+              <b>Metal cutting</b>
+            </figcaption>
+          </figure>
+          <figure class="portfolio-item reveal">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=85" alt="Industrial assembly work" width="800" height="600" loading="lazy">
+            <figcaption>
+              <span>ILLUSTRATIVE</span>
+              <b>Assembly support</b>
+            </figcaption>
+          </figure>
+        </div>
+        <p class="portfolio-note">Photographs are illustrative industry images and are not presented as completed Buckeye customer projects.</p>
+      </div>
+    </section>
+
+    <!-- BENEFITS + TESTIMONIAL -->
+    <section class="section benefits-section">
+      <div class="container">
+        <div class="benefits-layout">
+          <div class="benefits-copy reveal">
+            <div class="eyebrow"><span class="eyebrow-line"></span> WHY TEAMS CHOOSE BUCKEYE</div>
+            <h2>Capacity. Experience.<br><em>Responsiveness.</em></h2>
+            <div class="benefit-grid">
+              <article>
+                <span class="benefit-icon" aria-hidden="true">◈</span>
+                <h3>One-stop industrial source</h3>
+                <p>Machining, fabrication, cutting and assembly under one experienced team — reducing coordination overhead.</p>
+              </article>
+              <article>
+                <span class="benefit-icon" aria-hidden="true">◈</span>
+                <h3>Quick quote turnaround</h3>
+                <p>Responsive estimating so projects can move from inquiry to production without unnecessary delay.</p>
+              </article>
+              <article>
+                <span class="benefit-icon" aria-hidden="true">◈</span>
+                <h3>Daily delivery support</h3>
+                <p>Trucks deliver daily to customers, supporting on-time schedules and outage-critical work.</p>
+              </article>
+              <article>
+                <span class="benefit-icon" aria-hidden="true">◈</span>
+                <h3>Generational craftsmanship</h3>
+                <p>Three generations of continuous operation at the same machine shop location since 1957.</p>
+              </article>
+            </div>
+          </div>
+
+          <aside class="testimonial-layout reveal">
+            <div class="testimonial-card">
+              <div class="quote-mark" aria-hidden="true">“</div>
+              <blockquote>
+                <p>Buckeye delivered quality weldment and fabrications of all types, sizes, materials, and complexity. Many of these were provided in emergency situations requiring exceptional efforts by the Buckeye staff on our behalf.</p>
+                <p>The staff at Buckeye was extremely responsive and sensitive to our needs and schedule requirements. They were meticulous in understanding our requirements and were proactive in offering feedback and alternatives.</p>
+              </blockquote>
+              <footer>
+                <strong>Ted A. Bentley</strong>
+                <span>Sr. Project Manager</span>
+              </footer>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> COMMON QUESTIONS</div>
+            <h2>Answers that help<br><em>projects move faster.</em></h2>
+          </div>
+        </div>
+
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>What types of work does Buckeye handle?</summary>
+            <div class="faq-answer">
+              <p>Machining (job-shop repair and maintenance of light and heavy steel and other materials), welding and structural fabrication, flame and plasma cutting, and assembly/disassembly of industrial equipment such as gearboxes, rolls and conveyor systems.</p>
+            </div>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Are the welders certified?</summary>
+            <div class="faq-answer">
+              <p>Yes. The company states that its welders are D1.1 certified. Available processes include Stick, TIG, MIG and oxygen-acetylene.</p>
+            </div>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Where are the facilities located?</summary>
+            <div class="faq-answer">
+              <p>Two locations in Elyria, Ohio: the Machine Shop at 131 Buckeye Street and the Fabrication Shop at 175 Woodford Avenue. Contact the appropriate facility for the work you need.</p>
+            </div>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Can Buckeye support urgent or outage-related work?</summary>
+            <div class="faq-answer">
+              <p>Customer feedback highlights responsiveness in emergency situations and the ability to support tight outage schedules. Daily truck delivery further supports time-sensitive projects.</p>
+            </div>
+          </details>
+          <details class="faq-item reveal">
+            <summary>How do I request a quote?</summary>
+            <div class="faq-answer">
+              <p>Use the quote form on this page or call the Machine Shop (440.322.0319) or Fabrication Shop (440.323.6831) directly. Providing drawings, material requirements and target dates helps the team respond accurately.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE FORM -->
+    <section class="section quote-section" id="quote">
+      <div class="container quote-layout">
+        <div class="quote-intro reveal">
+          <div class="eyebrow eyebrow-light"><span class="eyebrow-line"></span> LET’S TALK ABOUT YOUR PROJECT</div>
+          <h2>Have an industrial project<br><em>in mind?</em></h2>
+          <p>Tell us a little about your requirements. This concept form demonstrates the enquiry experience; it does not transmit information to Buckeye.</p>
+          <div class="quote-phones">
+            <span>Prefer to speak with the team?</span>
+            <a href="tel:+14403220319">440.322.0319</a>
+            <span class="sep">·</span>
+            <a href="tel:+14403236831">440.323.6831</a>
+          </div>
+        </div>
+
+        <form class="quote-form reveal" id="quoteForm" novalidate>
+          <div class="form-header">
+            <h3>Project enquiry</h3>
+            <p>Fields marked <span class="req">*</span> are required.</p>
+          </div>
+
+          <div class="form-grid">
+            <label class="field">
+              <span>Full name <span class="req">*</span></span>
+              <input type="text" name="name" required autocomplete="name" placeholder="Your name">
+            </label>
+            <label class="field">
+              <span>Company</span>
+              <input type="text" name="company" autocomplete="organization" placeholder="Company name">
+            </label>
+            <label class="field">
+              <span>Email <span class="req">*</span></span>
+              <input type="email" name="email" required autocomplete="email" placeholder="you@company.com">
+            </label>
+            <label class="field">
+              <span>Phone</span>
+              <input type="tel" name="phone" autocomplete="tel" placeholder="(440) 000-0000">
+            </label>
+            <label class="field field-full">
+              <span>Service needed</span>
+              <select name="service">
+                <option value="">Select a capability…</option>
+                <option>Machining</option>
+                <option>Welding &amp; Fabrication</option>
+                <option>Flame / Plasma Cutting</option>
+                <option>Assembly / Disassembly</option>
+                <option>Multiple / Other</option>
+              </select>
+            </label>
+            <label class="field field-full">
+              <span>Project details <span class="req">*</span></span>
+              <textarea name="details" rows="5" required placeholder="Materials, quantities, tolerances, target dates, drawings available…"></textarea>
+            </label>
+            <label class="field field-full file-field">
+              <span>Attachment (optional)</span>
+              <input type="file" name="attachment" accept=".pdf,.png,.jpg,.jpeg,.doc,.docx,.step,.stp,.dxf">
+              <small>Demo only · PDF, image, document or CAD · max 10 MB</small>
+            </label>
+          </div>
+
+          <button class="button button-primary form-submit" type="submit">
+            Submit Quote Request <span aria-hidden="true">↗</span>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <p class="form-disclaimer">Demonstration only. No information or attachments are uploaded or transmitted.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- CONTACT / LOCATIONS -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading contact-heading reveal">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-line"></span> FIND THE RIGHT FACILITY</div>
+            <h2>Two Elyria locations.<br><em>One experienced team.</em></h2>
+          </div>
+          <p>Contact the appropriate facility to discuss your machining or fabrication requirements.</p>
+        </div>
+
+        <div class="locations-grid">
+          <article class="location-card reveal">
+            <div class="location-top">
+              <span>MACHINE SHOP</span>
+              <span class="location-symbol">01</span>
+            </div>
+            <h3>131 Buckeye Street</h3>
+            <p>Elyria, Ohio</p>
+            <a class="location-phone" href="tel:+14403220319">440.322.0319 <span aria-hidden="true">↗</span></a>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=131+Buckeye+Street+Elyria+Ohio" target="_blank" rel="noopener noreferrer">Get directions ↗</a>
+          </article>
+
+          <article class="location-card location-featured reveal">
+            <div class="location-top">
+              <span>FABRICATION SHOP</span>
+              <span class="location-symbol">02</span>
+            </div>
+            <h3>175 Woodford Avenue</h3>
+            <p>Elyria, Ohio</p>
+            <a class="location-phone" href="tel:+14403236831">440.323.6831 <span aria-hidden="true">↗</span></a>
+            <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=175+Woodford+Avenue+Elyria+Ohio" target="_blank" rel="noopener noreferrer">Get directions ↗</a>
+          </article>
+        </div>
+        <p class="contact-note">A public email address was not displayed on the official website information reviewed for this concept, so it has been intentionally omitted. Confirm current hours and contact details directly with the company.</p>
+      </div>
+    </section>
   </main>
-  <footer class="site-footer"><div class="container footer-main">
-    <div class="footer-brand"><a class="brand brand-light" href="#top"><span class="brand-mark">B<span>W</span></span><span class="brand-copy"><strong>BUCKEYE STATE</strong><small>WELDING &amp; FABRICATING, INC.</small></span></a><p>Machining, welding, fabrication and industrial support backed by generations of experience.</p><span class="footer-since">SERVING INDUSTRY SINCE 1957</span></div>
-    <div class="footer-col"><b>Explore</b><a href="#about">About us</a><a href="#services">Capabilities</a><a href="#equipment">Equipment</a><a href="#projects">Industry gallery</a></div>
-    <div class="footer-col"><b>Capabilities</b><a href="#machining">Machining</a><a href="#welding">Welding &amp; Fabrication</a><a href="#cutting">Flame &amp; Plasma Cutting</a><a href="#assembly">Assembly &amp; Disassembly</a></div>
-    <div class="footer-col"><b>Contact</b><a href="tel:+14403220319">Machine Shop · 440.322.0319</a><a href="tel:+14403236831">Fabrication Shop · 440.323.6831</a><span>131 Buckeye Street<br>Elyria, Ohio</span><span>175 Woodford Avenue<br>Elyria, Ohio</span></div>
-  </div><div class="container footer-bottom"><span>© <span id="year"></span> Buckeye State Welding &amp; Fabricating, Inc.</span><span>Independent website modernization concept by <b>Havid Technologies</b></span><a href="#top">Back to top ↑</a></div></footer>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand brand-light" href="#top">
+          <span class="brand-mark">B<span>W</span></span>
+          <span class="brand-copy">
+            <strong>BUCKEYE STATE</strong>
+            <small>WELDING &amp; FABRICATING, INC.</small>
+          </span>
+        </a>
+        <p>Machining, welding, fabrication and industrial support backed by generations of experience.</p>
+        <span class="footer-since">SERVING INDUSTRY SINCE 1957</span>
+      </div>
+      <div class="footer-col">
+        <b>Explore</b>
+        <a href="#about">About us</a>
+        <a href="#services">Capabilities</a>
+        <a href="#equipment">Equipment</a>
+        <a href="#process">Process</a>
+        <a href="#projects">Industry gallery</a>
+      </div>
+      <div class="footer-col">
+        <b>Capabilities</b>
+        <a href="#machining">Machining</a>
+        <a href="#welding">Welding &amp; Fabrication</a>
+        <a href="#cutting">Flame &amp; Plasma Cutting</a>
+        <a href="#assembly">Assembly &amp; Disassembly</a>
+      </div>
+      <div class="footer-col">
+        <b>Contact</b>
+        <a href="tel:+14403220319">Machine Shop · 440.322.0319</a>
+        <a href="tel:+14403236831">Fabrication Shop · 440.323.6831</a>
+        <span>131 Buckeye Street<br>Elyria, Ohio</span>
+        <span>175 Woodford Avenue<br>Elyria, Ohio</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Buckeye State Welding &amp; Fabricating, Inc.</span>
+      <span>Independent website modernization concept</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script type="module" src="/script.js"></script>
 </body>
 </html>
